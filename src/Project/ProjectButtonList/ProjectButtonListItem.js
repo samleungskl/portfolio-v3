@@ -3,7 +3,7 @@ import './ProjectButtonListItem.scss';
 function ProjectButtonListItem({btnName, btnHref}) {
   return (
     <div className="ProjectButtonListItem">
-      {btnName}
+      <a href={btnHref}>{btnName}</a>
     </div>
   );
 }
