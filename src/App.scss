@@ -5,6 +5,7 @@
   text-align: center;
   color: #303c4d;
   max-width: 700px;
+  animation: fadein 3s;
 }
 
 // Inspired by airtable link color
@@ -28,4 +29,42 @@ a:hover {
 
 a:active {
   color: #2d7ff9;
+}
+
+
+// Fade in animation from https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
