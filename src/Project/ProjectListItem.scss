@@ -1,0 +1,28 @@
+.ProjectListItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectNameAndStatusContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .projectName {
+        display: flex;
+        align-items:center;
+        text-align: start;
+        padding-right: 5px;
+    }
+    .projectStatus {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+    }
+}
+
+.projectDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: start;
+}
