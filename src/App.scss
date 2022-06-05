@@ -4,15 +4,18 @@
   align-items: center;
   text-align: center;
   color: #303c4d;
+  max-width: 700px;
 }
 
 // Inspired by airtable link color
 a {
+  font-weight: 600;
   text-underline-offset: 4px;
   text-decoration-thickness: 4px;
 }
+
 a:link {
-  color: #2d7ff9;
+  color: #060607;
 }
 
 a:visited {

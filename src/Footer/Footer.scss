@@ -1,0 +1,17 @@
+.Footer{
+    width: 100%;
+    .Message{
+        .description{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        margin: 10px;
+        border: 4px;
+        border-style: solid;
+        min-height: 50px;
+        justify-content: center;
+        font-size: larger;
+        font-weight: 600;
+        }
+    }
+}
