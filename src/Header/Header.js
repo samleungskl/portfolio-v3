@@ -2,7 +2,6 @@ import Message from '../Message/Message';
 import './Header.scss';
 
 function Header({ dataArray }) {
-    console.log(dataArray)
     const result = dataArray.map((element) => {
         return <Message
             contentClassName={element.contentClassName}
