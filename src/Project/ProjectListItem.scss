@@ -1,22 +1,32 @@
 .ProjectListItem {
     display: flex;
     flex-direction: column;
+    border: 4px;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
 }
 
 .projectNameAndStatusContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     .projectName {
         display: flex;
-        align-items:center;
+        align-items: center;
         text-align: start;
-        padding-right: 5px;
+        font-weight: 600;
+        margin: 0px;
+        padding: 0px 5px 15px 0px;
     }
+
     .projectStatus {
         display: flex;
         align-items: center;
-        padding-right: 10px;
+        font-weight: 600;
+        margin: 0px;
+        padding: 0px 5px 15px 0px;
     }
 }
 
@@ -24,5 +34,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding: 15px 0px 20px 0px;
     text-align: start;
+    font-weight: 600;
 }
