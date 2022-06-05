@@ -7,7 +7,6 @@ function ProjectList({dataArray}) {
     })
   return (
     <div className="ProjectList">
-        ProjectList
         {result}
     </div>
   );

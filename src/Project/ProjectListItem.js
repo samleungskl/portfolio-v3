@@ -1,13 +1,12 @@
 import './ProjectListItem.scss';
-
-function ProjectListItem({projectName, projectStack, projectStatus, projectDescription, projectButtons}) {
-    console.log(projectButtons)
+import ProjectStackList from './ProjectStackList/ProjectStackList';
+function ProjectListItem({ projectName, projectStack, projectStatus, projectDescription, projectButtons }) {
   return (
     <div className="ProjectListItem">
-        {projectName}
-        {projectStatus}
-        {projectStack}
-        {projectDescription}
+      {projectName}
+      {projectStatus}
+      <ProjectStackList dataArray={projectStack}/>
+      {projectDescription}
     </div>
   );
 }
