@@ -5,13 +5,13 @@
     box-shadow: 0px 2.5px 5px 0px rgba(0, 0, 0, 0.5)
 }
 
-.ProjectListItemContainer{
+.ProjectListItemContainer {
     border: 4px;
     border-style: solid;
     padding: 10px;
 }
 
-.projectIsFeatured{
+.projectIsFeatured {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,4 +58,18 @@
     padding: 15px 0px 20px 0px;
     text-align: start;
     font-weight: 600;
+}
+
+.ProjectYearContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .projectYear{
+        margin: 0px;
+        margin-top: 10px;
+    }
+    .projectStatus{
+        margin: 0px;
+        margin-top: 10px;
+    }
 }
