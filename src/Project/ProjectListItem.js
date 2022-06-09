@@ -8,9 +8,7 @@ function ProjectListItem({ projectName, projectStack, projectStatus, projectDesc
       {projectIsFeatured === true && <p className='projectIsFeatured'>Featured</p>}
       {projectIsFeatured === undefined && <p className='projectIsFeatured'></p>}
       <div className="ProjectListItemContainer">
-        <div className='projectNameAndStatusContainer'>
-          <h2 className='projectName'>{projectName}</h2>
-        </div>
+        <h2 className='projectName'>{projectName}</h2>
         <ProjectStackList dataArray={projectStack} />
         <div className='projectDescription'>{projectDescription}</div>
         <ProjectButtonList dataArray={projectButtons} />
