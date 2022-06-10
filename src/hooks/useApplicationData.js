@@ -9,7 +9,7 @@ export default function useApplicationData() {
 
     const loadData = async () => {
         try {
-            const res = await fetch('/api/data')
+            const res = await fetch('/.netlify/functions/data')
             const result = await res.json()
             setState(prev => ({
                 ...prev,

@@ -2,7 +2,6 @@ import './ProjectListItem.scss';
 import ProjectStackList from './ProjectStackList/ProjectStackList';
 import ProjectButtonList from './ProjectButtonList/ProjectButtonList';
 function ProjectListItem({ projectName, projectStack, projectStatus, projectDescription, projectButtons, projectIsFeatured, projectYear }) {
-  console.log({ projectIsFeatured })
   return (
     <div className="ProjectListItem">
       {projectIsFeatured === true && <p className='projectIsFeatured'>Featured</p>}
