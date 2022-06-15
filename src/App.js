@@ -6,11 +6,13 @@ import useApplicationData from './hooks/useApplicationData';
 
 function App() {
   const { state } = useApplicationData();
+  const isloaded = state.loaded
   return (
     <div className="App">
-      <Header dataArray={state.header}/>
-      <ProjectList dataArray={state.projects}/>
-      <Footer dataArray={state.footer}/>
+      {isloaded === false && <div className='loadingScreen'>Loading...</div>}
+      {isloaded === true && <Header dataArray={state.header}/>}
+      {isloaded === true && <ProjectList dataArray={state.projects}/>}
+      {isloaded === true && <Footer dataArray={state.footer}/>}
     </div>
   );
 }

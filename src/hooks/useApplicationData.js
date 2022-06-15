@@ -5,6 +5,7 @@ export default function useApplicationData() {
         projects: [],
         header: [],
         footer: [],
+        loaded: false,
     });
 
     const loadData = async () => {
@@ -16,6 +17,7 @@ export default function useApplicationData() {
                 projects: result.projects,
                 header: result.header,
                 footer: result.footer,
+                loaded: true,
             }));
         } catch (error) {
             console.error(error);

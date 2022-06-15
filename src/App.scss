@@ -6,6 +6,7 @@
   color: #303c4d;
   max-width: 700px;
   animation: fadein 2s;
+  height: 100%;
 }
 
 // Inspired by airtable link color
@@ -67,4 +68,11 @@ a:active {
   to {
     opacity: 1;
   }
+}
+
+.loadingScreen{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 50px;
 }
