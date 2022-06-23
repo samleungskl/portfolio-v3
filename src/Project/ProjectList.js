@@ -1,3 +1,4 @@
+import React from 'react';
 import './ProjectList.scss';
 import ProjectListItem from './ProjectListItem';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 import './ProjectStackListItem.scss';
 
 function ProjectStackListItem({stackName}) {

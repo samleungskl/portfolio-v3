@@ -1,3 +1,4 @@
+import React from 'react';
 import './ProjectStackList.scss';
 import ProjectStackListItem from './ProjectStackListItem';
 function ProjectStackList({ dataArray }) {

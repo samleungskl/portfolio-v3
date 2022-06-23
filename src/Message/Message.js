@@ -1,3 +1,4 @@
+import React from 'react';
 import './Message.scss';
 
 function Message({contentClassName, contentHtmlTag, contentText, contentHref, contentWidth, contentImage}) {
