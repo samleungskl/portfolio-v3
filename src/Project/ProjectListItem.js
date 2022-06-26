@@ -19,6 +19,6 @@ function ProjectListItem({ projectName, projectStack, projectStatus, projectDesc
       </div>
     </div>
   );
-}
+};
 
 export default ProjectListItem;

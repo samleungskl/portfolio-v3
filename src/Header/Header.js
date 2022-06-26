@@ -13,12 +13,12 @@ function Header({ dataArray }) {
             contentImage={element.contentImage}
             key={element.contentUid}
         />
-    })
+    });
     return (
         <div className="Header">
             {result}
         </div>
     );
-}
+};
 
 export default Header;

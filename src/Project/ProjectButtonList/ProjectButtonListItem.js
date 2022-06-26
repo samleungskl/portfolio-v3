@@ -7,6 +7,6 @@ function ProjectButtonListItem({btnName, btnHref}) {
       <a href={btnHref}>{btnName}</a>
     </div>
   );
-}
+};
 
 export default ProjectButtonListItem;
