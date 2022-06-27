@@ -1,48 +1,10 @@
 const { base } = require('./airtable');
 const formattedReturn = require('./formattedReturn');
-const extractFieldData = require('./extractFieldData');
-
+const { extractFieldData } = require('./extractFieldData');
+const { extractImgUrl } = require('./extractImgUrl');
+const { matchButtonsIntoProjects } = require('./matchButtonsIntoProjects');
 module.exports = async (event) => {
     try {
-
-        //extract only data in key 'fields' from airtableAPI
-        const extractFieldData = (dataAryOfObj) => {
-            const result = dataAryOfObj.map(element => {
-                return element.fields;
-            });
-            return result;
-        };
-
-        //extract ImgUrl from the list of Objects, and put it back into the array.
-        const extractImgUrl = (dataAryOfObj) => {
-            const result = dataAryOfObj.map(element => {
-                // if image field is not empty, and it is an array(because after extraction it is no longer an array, without this it will causes error)
-                if (element.contentImage !== undefined && Array.isArray(element.contentImage)) {
-                    const imgUrl = element.contentImage[0].url;
-                    element.contentImage = imgUrl;
-                }
-                return element;
-            });
-            return result;
-        };
-
-        //match the buttons to projects
-        const matchButtonsIntoProjects = (projectsAryOfObj, buttonsAryOfObj) => {
-            const result = projectsAryOfObj.map((element) => {
-                const projectUid = element.projectUid;
-                const filteredBtn = buttonsAryOfObj.filter((element2) => {
-                    if (element2.showcase === undefined) {
-                        return false;
-                    } else {
-                        return element2.showcase[0] === projectUid;
-                    };
-                });
-                element.projectButtons = filteredBtn;
-                return element;
-            });
-            return result;
-        };
-
         const data = await Promise.all([
             base('projects').select({ view: 'allProjects' }).all(),
             base('contents').select({ view: 'header' }).all(),
