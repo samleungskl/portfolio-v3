@@ -6,4 +6,4 @@ const extractFieldData = (dataAryOfObj) => {
     return result;
 };
 
-module.exports = {extractFieldData};
+module.exports = { extractFieldData };
