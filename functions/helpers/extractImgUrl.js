@@ -11,4 +11,4 @@ const extractImgUrl = (dataAryOfObj) => {
     return result;
 };
 
-module.exports = {extractImgUrl}
+module.exports = { extractImgUrl }
