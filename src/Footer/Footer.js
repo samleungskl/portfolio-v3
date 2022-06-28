@@ -13,12 +13,12 @@ function Footer({ dataArray }) {
             contentImage={element.contentImage}
             key={element.contentUid}
         />
-    })
+    });
     return (
         <div className="Footer">
             {result}
         </div>
     );
-}
+};
 
 export default Footer;

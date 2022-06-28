@@ -7,7 +7,7 @@ import useApplicationData from './hooks/useApplicationData';
 
 function App() {
   const { state } = useApplicationData();
-  const isloaded = state.loaded
+  const isloaded = state.loaded;
   return (
     <div className="App">
       {isloaded === false && <div className='loadingScreen'>Loading...</div>}
@@ -16,6 +16,6 @@ function App() {
       {isloaded === true && <Footer dataArray={state.footer}/>}
     </div>
   );
-}
+};
 
 export default App;

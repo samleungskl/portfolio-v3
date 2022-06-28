@@ -7,6 +7,6 @@ function ProjectStackListItem({stackName}) {
       {stackName}
     </div>
   );
-}
+};
 
 export default ProjectStackListItem;

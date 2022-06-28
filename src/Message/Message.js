@@ -9,6 +9,6 @@ function Message({contentClassName, contentHtmlTag, contentText, contentHref, co
         {contentImage !== undefined && <HtmlTag src={contentImage} href={contentHref} className={contentClassName} style={{width: contentWidth}} alt={contentText}></HtmlTag>}
     </div>
   );
-}
+};
 
 export default Message;
